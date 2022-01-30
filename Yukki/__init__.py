@@ -11,7 +11,7 @@ from motor.motor_asyncio import AsyncIOMotorClient as Bot
 from rich.console import Console
 from rich.table import Table
 
-from config import (ASSISTANT_, DURATION_LIMIT_MIN, LOG_GROUP_ID,
+from config import (ASSISTANT_PREFIX, DURATION_LIMIT_MIN, LOG_GROUP_ID,
                     LOG_SESSION)
 from config import MONGO_DB_URI as mango
 from config import (MUSIC_BOT_NAME, OWNER_ID, STRING1, STRING2, STRING3,

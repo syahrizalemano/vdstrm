@@ -112,7 +112,7 @@ async def play_playlist_cmd(_, message):
 @PermissionCheck
 @AssistantAdd
 async def playlist(_, message):
-    thumb = "Utils/Playlist.jpg"
+    thumb = "Utils/zoro.png"
     user_id = message.from_user.id
     user_name = message.from_user.first_name
     buttons = check_markup(user_name, user_id, "abcd")

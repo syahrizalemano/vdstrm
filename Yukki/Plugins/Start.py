@@ -101,7 +101,7 @@ async def useradd(_, message: Message):
     await asyncio.gather(
         message.delete(),
         message.reply_text(
-            f"Thanks for having me in {message.chat.title}.\n{MUSIC_BOT_NAME} is alive.\n\nFor any assistance or help, checkout our support group and channel.",
+            f"MANAGED WITH ENCA BY ANO.",
             reply_markup=InlineKeyboardMarkup(out[1]),
         ),
     )
@@ -130,7 +130,7 @@ async def settings(_, message: Message):
     )
 
 
-@app.on_callback_query(filters.regex("okaybhai"))
+@app.on_callback_query(filters.regex("okay"))
 async def okaybhai(_, CallbackQuery):
     await CallbackQuery.answer("Going Back ...")
     out = start_pannel()
